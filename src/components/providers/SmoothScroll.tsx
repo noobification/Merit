@@ -31,6 +31,9 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
         // Disable lag smoothing to prevent stutter on heavy load
         gsap.ticker.lagSmoothing(0);
 
+        // Normalize scroll on mobile to prevent address bar jitter with ScrollTrigger pinning
+        ScrollTrigger.normalizeScroll(true);
+
         return () => {
             gsap.ticker.remove(update);
             if (lenisInstance) {
@@ -44,7 +47,7 @@ export function SmoothScroll({ children }: SmoothScrollProps) {
     const lenisOptions = {
         lerp: 0.08,
         duration: 1.5,
-        smoothTouch: false, // Keep native touch for accessibility/predictability usually, or true for consistent feel
+        smoothTouch: true, // Enable for consistent momentum on mobile
         smoothWheel: true,
     };
 

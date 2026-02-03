@@ -230,9 +230,9 @@ export function SignatureShowcase() {
                     ))}
 
                     {/* "View All" Card at the end */}
-                    <Link href="/models" className="w-[30vw] md:w-[20vw] h-full flex-shrink-0 flex items-center justify-center group border-l border-merit-navy/10">
+                    <Link href="/models" className="w-[80vw] md:w-[20vw] h-full flex-shrink-0 flex items-center justify-center group border-l border-merit-navy/10">
                         <div className="text-center">
-                            <span className="block font-serif text-4xl m-4 text-merit-navy group-hover:text-merit-gold transition-colors">
+                            <span className="block font-serif text-2xl md:text-4xl m-4 text-merit-navy group-hover:text-merit-gold transition-colors">
                                 View Full <br /> Collection
                             </span>
                             <div className="w-16 h-1 bg-merit-navy group-hover:bg-merit-gold transition-colors mx-auto mt-4" />

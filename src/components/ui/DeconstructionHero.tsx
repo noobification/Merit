@@ -250,14 +250,14 @@ export function DeconstructionHero() {
 
                 {/* Scroll-Linked Text Animations */}
                 {/* Top Left - Sliding IN from Left */}
-                <div ref={topTextRef} className="absolute top-12 left-6 md:left-12 z-20 opacity-0 pointer-events-none mix-blend-difference text-white">
+                <div ref={topTextRef} className="absolute top-4 left-4 md:top-12 md:left-12 z-20 opacity-0 pointer-events-none mix-blend-difference text-white">
                     <span className="block font-bold tracking-[0.1em] text-lg md:text-2xl uppercase border-l-2 border-merit-gold pl-4">
                         Making Excellence attainable
                     </span>
                 </div>
 
                 {/* Bottom Right - Sliding IN from Right */}
-                <div ref={bottomTextRef} className="absolute bottom-12 right-6 md:right-12 z-20 opacity-0 pointer-events-none mix-blend-difference text-white text-right">
+                <div ref={bottomTextRef} className="absolute bottom-4 right-4 md:bottom-12 md:right-12 z-20 opacity-0 pointer-events-none mix-blend-difference text-white text-right">
                     <span className="block font-bold tracking-[0.1em] text-lg md:text-2xl uppercase border-r-2 border-merit-gold pr-4">
                         One Home at a time
                     </span>
